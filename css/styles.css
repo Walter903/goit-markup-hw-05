@@ -428,19 +428,19 @@ a {
 }
 
 .footer-text {
-font-weight: 400;
-font-size: 16px; 
-letter-spacing: 0.02em;
-color: #f4f4fd;
-max-width: 264px;
-min-height: 72px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  max-width: 264px;
+  min-height: 72px;
 }
 .second-footer {
   width: 208px;
   height: 80px;
 }
 .media {
-  color: #FFFFFF ;
+  color: #ffffff;
   line-height: 1.5;
   letter-spacing: 0.02em;
   height: 24px;
@@ -449,8 +449,8 @@ min-height: 72px;
   margin-bottom: 16px;
 }
 .list-footer {
-  display: flex; 
-  gap: 16px; 
+  display: flex;
+  gap: 16px;
 }
 .item-footer {
   width: 40px;
@@ -461,10 +461,10 @@ min-height: 72px;
   height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socium-footer:hover,
 .socium-footer:focus {
@@ -480,13 +480,24 @@ min-height: 72px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibilyty 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+.modal-text {
+  font-weight: 500; 
+  font-size: 16px;
+  line-height: 1.5; 
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2E2F42;
+  margin-bottom: 16px;
+
 }
 .modal {
   position: absolute;
@@ -497,10 +508,41 @@ min-height: 72px;
   min-height: 584px;
   border-radius: 4px;
   transform: translate(-50%, -50%);
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-background-color: #fcfcfc;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px; 
 }
+
+.modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus  {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+
+.close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .backdrop:not(.is-open) .modal {
   transform: translate(-50%, -100%);
 }
@@ -509,7 +551,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe {
   margin-bottom: 16px;
-  font-weight: 500; 
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -520,23 +562,23 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   gap: 24px;
 }
 .footer-email {
-  width: 264px; 
+  width: 264px;
   height: 40px;
   border: 1px solid #ffffff;
-  background-color: transparent; 
-  font-size: 12px; 
+  background-color: transparent;
+  font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
   padding-left: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: #ffffff; 
+  color: #ffffff;
 }
 input::placeholder {
-	color: #ffffff;
+  color: #ffffff;
 }
 .footer-button {
-  min-width: 165px; 
+  min-width: 165px;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -548,10 +590,10 @@ input::placeholder {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
-  background-color: #4D5AE5;
+  background-color: #4d5ae5;
   border: none;
-  border-radius: 4px; 
+  border-radius: 4px;
 }
 .footer-icon {
-  margin-left: 16px; 
+  margin-left: 16px;
 }
