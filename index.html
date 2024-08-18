@@ -57,7 +57,9 @@
       <section class="hero-image">
         <div class="container hero-container">
           <h1 class="text-hero">Effective Solutions for Your Business</h1>
-          <button type="button" class="btn-order" data-modal-open>Order Service</button>
+          <button type="button" class="btn-order" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -460,17 +462,30 @@
               </li>
             </ul>
           </div>
-          <div class="backdrop" data-modal>
-            <div class="modal">
-              <button class="modal-close-btn" type="button" data-modal-close>
-                close
+          <div>
+            <p class="subscribe">Subscribe</p>
+            <form class="form">
+              <label for="email">
+                <input class="footer-email" type="email" placeholder="E-mail" />
+              </label>
+              <button class="footer-button" type="submit">
+                Subscribe
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-Frame"></use>
+                </svg>
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </footer>
     </section>
-   
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          close
+        </button>
+      </div>
+    </div>
 
     <script src="./js/modal.js"></script>
   </body>
