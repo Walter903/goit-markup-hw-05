@@ -597,7 +597,7 @@ input::placeholder {
 .footer-icon {
   margin-left: 16px;
 }
-.first-form {
+.name-form {
   margin-bottom: 8px;
 }
 .label-first {
@@ -609,7 +609,7 @@ input::placeholder {
   margin-bottom: 4px; 
 
 }
-.forms {
+.name-input {
   position: relative;
 }
 .input-first {
@@ -624,6 +624,14 @@ input::placeholder {
 }
 .input-first:focus {
   border-color: #4D5AE5;
+}
+.name-svg {
+  position: absolute;
+  left: 16px;
+  top: 50%; 
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .textarea {
   width: 100%; 
@@ -682,4 +690,5 @@ input::placeholder {
   background-color: #4D5AE5;
   border: none; 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  margin: auto;
 }
